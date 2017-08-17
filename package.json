@@ -1,0 +1,16 @@
+{
+  "name": "mqsc_web",
+  "version": "1.0.0",
+  "description": "Website dedicated to STEM women\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cintended to honor STEM women.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongoose": "*"
+  },
+  "author": "Marta Lobo @MartaL0b0",
+  "license": "ISC"
+}

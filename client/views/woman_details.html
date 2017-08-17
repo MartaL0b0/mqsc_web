@@ -1,0 +1,27 @@
+<a href="#/women">Atrás</a>
+
+<div class="panel panel-default" ng-init="getWoman()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{woman.name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+    <div class="col-md-4">
+      <img src="{{woman.image_url}}">
+    </div>
+    <div class="col-md-8">
+      <ul class="list-group">
+        <li class="list-group-item">Job: {{woman.job}}</li>
+        <li class="list-group-item">Birth Date: {{woman.birthDate}}</li>
+        <li class="list-group-item">Decease Date: {{woman.deceaseDate}}</li>
+      </ul>
+      <p>{{woman.bio}}</p>
+      <!--minuto 34 del video pone boton para abrir nueva pestaña y comprar el libro-->
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="pull-right">
+  <a href="#!/women/edit/{{woman._id}}">Edit</a> | <a href="#" ng-click="removeWoman(woman._id)">Delete</a>
+</div>

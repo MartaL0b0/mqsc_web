@@ -1,0 +1,22 @@
+<div class="panel panel-default" ng-init="getWomen()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Greatest Women</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div ng-repeat="woman in women">  <!--Esto es un bucle foreach que me pinta cada woman que se encuentra -->
+        <div class= "col-md-6">
+            <div class="col-md-6">
+              <h4>{{woman.name}}</h4>
+              <p>{{woman.field}}</p>
+                <p>{{woman.job}}</p>
+              <a class="btn btn-primary" href="#!/women/details/{{woman._id}}">Learn more</a>
+            </div>
+            <div class="col-md-6">
+              <img class="thumbnail" src="{{woman.image_url}}" alt="{{woman.name}}">
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
