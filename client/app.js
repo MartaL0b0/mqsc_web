@@ -25,6 +25,11 @@ myApp.config(function ($routeProvider) {
     templateUrl: 'views/edit_woman.html'
   })
 
+  .when('/test',{
+    controller: 'WomenController',
+    templateUrl: 'views/template.html'
+  })
+
   .otherwise({
     redirectTo: '/'
   });
