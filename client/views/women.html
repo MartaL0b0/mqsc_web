@@ -36,11 +36,11 @@
     <!--/.Page heading-->
     <hr>
 
-    <div class="row">
-
+    <div class="row my-flex-card">
         <div class= "col-xs-4 col-sm-4 col-md-4 col-lg-4" ng-repeat="woman in women">
             <!--Card-->
               <div class="card">
+
                   <!--Card image-->
                   <img class="img-fluid" ng-src="{{woman.image_url}}" alt="{{woman.name}}">
                   <!--Card content-->
@@ -52,6 +52,7 @@
                       <a href="#!/women/details/{{woman._id}}" class="btn btn-primary">Learn more</a>
                   </div>
               </div>
+
               <!--/.Card-->
         </div>
       </div>
