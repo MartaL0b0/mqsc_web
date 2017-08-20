@@ -2,11 +2,21 @@
 img {
   width: 100%;
 }
-.card {
-    margin-bottom: 2rem;
-}
 
 .my-flex-card > div > div.card {
   height: calc(100% - 15px);
   margin-bottom: 15px;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.card {
+  position: relative;
+}
+
+#class-btn {
+  position: absolute;
+  bottom: 0;
 }

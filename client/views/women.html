@@ -22,6 +22,31 @@
 </div> -->
 
 <!-- ng-repeat es un bucle foreach que me pinta cada woman que se encuentra -->
+<style media="screen">
+  .learn-more {
+    position: relative;
+    bottom: 10;
+  }
+
+  .card {
+    position: relative;
+
+  }
+
+  .card-text {
+
+  }
+
+  #class-btn {
+    position: absolute;
+    bottom: 10;
+    left: 10;
+
+  }
+
+
+</style>
+
 
 <div class="container" ng-init="getWomen()">
     <!--Page heading-->
@@ -31,26 +56,29 @@
               <br>
                 <small class="text-muted" style="padding-left: 1em">Great women of history</small>
             </h1>
+            <hr>
         </div>
     </div>
     <!--/.Page heading-->
-    <hr>
 
     <div class="row my-flex-card">
         <div class= "col-xs-4 col-sm-4 col-md-4 col-lg-4" ng-repeat="woman in women">
             <!--Card-->
               <div class="card">
-
                   <!--Card image-->
                   <img class="img-fluid" ng-src="{{woman.image_url}}" alt="{{woman.name}}">
                   <!--Card content-->
-                  <div class="card-body">
+                  <div class="card-body inline-block">
                       <!--Title-->
                       <h4 class="card-title">{{woman.name}}</h4>
                       <!--Text-->
-                      <p class="card-text"> <h5>{{woman.field}}</h5> <br> {{woman.job}}</p>
-                      <a href="#!/women/details/{{woman._id}}" class="btn btn-primary">Learn more</a>
+                      <p class="card-text"> <h5>{{woman.field}}</h5> {{woman.job}}</p>
+                      <br>
+                      <br>
+
+                      <a class="btn btn-success" id="class-btn" href="#!/women/details/{{woman._id}}">Learn more</a>
                   </div>
+
               </div>
 
               <!--/.Card-->
@@ -58,3 +86,78 @@
       </div>
 
   </div>
+
+  <!--Footer-->
+  <footer class="page-footer center-on-small-only">
+      <!--Footer links-->
+      <div class="container-fluid">
+          <div class="row">
+              <!--First column-->
+              <div class="col-lg-3 col-md-6 ml-auto">
+                  <h5 class="title font-bold mt-3 mb-4">About MQSC</h5>
+                  <p> <i>Mamá Quiero Ser Científica</i> is a proyect to encourage female schoolers in pursuing STEM degrees (Science, Technology, Engineering and Math)</p>
+                  <p>This is a first version as a brief example of what we can do to defend equality in technology.</p>
+              </div>
+              <!--/.First column-->
+              <hr class="w-100 clearfix d-sm-none">
+              <!--Second column-->
+              <div class="col-lg-2 col-md-6 ml-auto">
+                  <h5 class="title font-bold mt-3 mb-4">Cooking books</h5>
+                  <ul>
+                      <li>
+                          <a href="#!">"Cooking A-Z" by Mike Kalynsky</a>
+                      </li>
+                      <li>
+                          <a href="#!">"No More Heat" by Joe Doe</a>
+                      </li>
+                      <li>
+                          <a href="#!">"Sea Food for Starters" by Alex Well</a>
+                      </li>
+                      <li>
+                          <a href="#!">"Easy Calories" by Samantha Bens</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--/.Second column-->
+              <hr class="w-100 clearfix d-sm-none">
+              <!--Third column-->
+              <div class="col-lg-2 col-md-6 ml-auto">
+                  <h5 class="title font-bold mt-3 mb-4">Popular recipes</h5>
+                  <ul>
+                      <li>
+                          <a href="#!">Beff steak with almonds</a>
+                      </li>
+                      <li>
+                          <a href="#!">Cordon Bleu</a>
+                      </li>
+                      <li>
+                          <a href="#!">Vegan pancakes</a>
+                      </li>
+                      <li>
+                          <a href="#!">Turkey stuffed sandwiches</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--/.Third column-->
+              <hr class="w-100 clearfix d-sm-none">
+              <!--Fourth column-->
+              <div class="col-lg-2 col-md-6 ml-auto">
+                  <h5 class="title font-bold mt-3 mb-4">Find me on</h5>
+                  <ul>
+                      <li>
+                          <a href="#!">Facebook</a>
+                      </li>
+                      <li>
+                          <a href="#!">Youtube</a>
+                      </li>
+                      <li>
+                          <a href="#!">Instagram</a>
+                      </li>
+                      <li>
+                          <a href="#!">Pinterest</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--/.Fourth column-->
+          </div>
+      </div>
