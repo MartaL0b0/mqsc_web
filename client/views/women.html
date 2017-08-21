@@ -22,30 +22,7 @@
 </div> -->
 
 <!-- ng-repeat es un bucle foreach que me pinta cada woman que se encuentra -->
-<style media="screen">
-  .learn-more {
-    position: relative;
-    bottom: 10;
-  }
 
-  /*.card {
-    position: relative;
-
-  }
-
-  .card-text {
-
-  }
-
-  #class-btn {
-    position: absolute;
-    bottom: 10;
-    left: 10;
-
-  }*/
-
-
-</style>
 
 
 <div class="container" ng-init="getWomen()">
@@ -68,7 +45,7 @@
                   <!--Card image-->
                   <img class="img-fluid" ng-src="{{woman.image_url}}" alt="{{woman.name}}">
                   <!--Card content-->
-                  <div class="card-body inline-block">
+                  <div class="card-body">
                       <!--Title-->
                       <h4 class="card-title">{{woman.name}}</h4>
                       <!--Text-->
@@ -83,77 +60,34 @@
 
   </div>
 
-  <!--Footer-->
-  <footer class="page-footer center-on-small-only">
-      <!--Footer links-->
-      <div class="container-fluid">
-          <div class="row">
-              <!--First column-->
-              <div class="col-lg-3 col-md-6 ml-auto">
-                  <h5 class="title font-bold mt-3 mb-4">About MQSC</h5>
-                  <p> <i>Mamá Quiero Ser Científica</i> is a proyect to encourage female schoolers in pursuing STEM degrees (Science, Technology, Engineering and Math)</p>
-                  <p>This is a first version as a brief example of what we can do to defend equality in technology.</p>
-              </div>
-              <!--/.First column-->
-              <hr class="w-100 clearfix d-sm-none">
-              <!--Second column-->
-              <div class="col-lg-2 col-md-6 ml-auto">
-                  <h5 class="title font-bold mt-3 mb-4">Cooking books</h5>
-                  <ul>
-                      <li>
-                          <a href="#!">"Cooking A-Z" by Mike Kalynsky</a>
-                      </li>
-                      <li>
-                          <a href="#!">"No More Heat" by Joe Doe</a>
-                      </li>
-                      <li>
-                          <a href="#!">"Sea Food for Starters" by Alex Well</a>
-                      </li>
-                      <li>
-                          <a href="#!">"Easy Calories" by Samantha Bens</a>
-                      </li>
-                  </ul>
-              </div>
-              <!--/.Second column-->
-              <hr class="w-100 clearfix d-sm-none">
-              <!--Third column-->
-              <div class="col-lg-2 col-md-6 ml-auto">
-                  <h5 class="title font-bold mt-3 mb-4">Popular recipes</h5>
-                  <ul>
-                      <li>
-                          <a href="#!">Beff steak with almonds</a>
-                      </li>
-                      <li>
-                          <a href="#!">Cordon Bleu</a>
-                      </li>
-                      <li>
-                          <a href="#!">Vegan pancakes</a>
-                      </li>
-                      <li>
-                          <a href="#!">Turkey stuffed sandwiches</a>
-                      </li>
-                  </ul>
-              </div>
-              <!--/.Third column-->
-              <hr class="w-100 clearfix d-sm-none">
-              <!--Fourth column-->
-              <div class="col-lg-2 col-md-6 ml-auto">
-                  <h5 class="title font-bold mt-3 mb-4">Find me on</h5>
-                  <ul>
-                      <li>
-                          <a href="#!">Facebook</a>
-                      </li>
-                      <li>
-                          <a href="#!">Youtube</a>
-                      </li>
-                      <li>
-                          <a href="#!">Instagram</a>
-                      </li>
-                      <li>
-                          <a href="#!">Pinterest</a>
-                      </li>
-                  </ul>
-              </div>
-              <!--/.Fourth column-->
-          </div>
-      </div>
+<hr>
+  <footer class="page-footer">
+
+    <!--Call to action-->
+    <div class="call-to-action">
+        <h4 class="mb-5">Mamá Quiero Ser Científica</h4>
+        <ul>
+            <li>
+                <h5>Follow us on our Social Media</h5>
+            </li>
+            <li>
+                <a target="_blank" href="https://twitter.com/mqscientifica" class="btn btn-info btn-social btn-twitter waves-effect waves-light " rel="nofollow">Twitter <span class="fa fa-twitter"></span></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/Mam%C3%A1-Quiero-Ser-Cient%C3%ADfica-748273108707351/" class="btn btn-primary btn-social btn-facebook waves-effect waves-light" rel="nofollow">Facebook <span class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/mqscientifica/" class="btn btn-deep-orange btn-social btn-instagram waves-effect waves-light" rel="nofollow">Instagram <span class="fa fa-instagram"></a>
+            </li>
+        </ul>
+    </div>
+    <!--/.Call to action-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="containter-fluid">
+            © 2017 Copyright: <a href="https://github.com/MartaL0b0/"> @MartaL0b0 </a>
+        </div>
+    </div>
+    <!--/.Copyright-->
+  </footer>
