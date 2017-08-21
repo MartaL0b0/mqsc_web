@@ -12,11 +12,6 @@ img {
   margin-bottom: 50px;
 }
 
-.card {
-  position: relative;
-}
-
-#class-btn {
-  position: absolute;
-  bottom: 0;
+h5 {
+  color: green;
 }
