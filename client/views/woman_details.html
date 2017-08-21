@@ -23,5 +23,13 @@
 </div>
 
 <div class="pull-right">
-  <a href="#!/women/edit/{{woman._id}}">Edit</a> | <a href="#" ng-click="removeWoman(woman._id)">Delete</a>
+  <a class="btn btn-success" href=#!/women/edit/{{woman._id}}"" aria-label="Settings">
+  <i class="fa fa-cog" aria-hidden="true"></i>
+  </a>
+
+  <a class="btn btn-danger" href="#" aria-label="Delete" ng-click="removeWoman(woman._id)">
+  <i class="fa fa-trash-o" aria-hidden="true"></i>
+  </a>
+
+  <!-- <a href="#!/women/edit/{{woman._id}}">Edit</a> | <a href="#" ng-click="removeWoman(woman._id)">Delete</a> -->
 </div>
