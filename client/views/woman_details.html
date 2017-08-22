@@ -1,4 +1,4 @@
-<a href="#!/women">Atrás</a>
+<!-- <a href="#!/women">Atrás</a>
 
 <div class="panel panel-default" ng-init="getWoman()">
   <div class="panel-heading">
@@ -16,7 +16,7 @@
         <li class="list-group-item">Decease Date: {{woman.deceaseDate}}</li>
       </ul>
       <p>{{woman.bio}}</p>
-      <!--minuto 34 del video pone boton para abrir nueva pestaña y comprar el libro-->
+
     </div>
   </div>
 </div>
@@ -31,5 +31,68 @@
   <i class="fa fa-trash-o" aria-hidden="true"></i>
   </a>
 
-  <!-- <a href="#!/women/edit/{{woman._id}}">Edit</a> | <a href="#" ng-click="removeWoman(woman._id)">Delete</a> -->
+
+</div> -->
+
+<!--Main column-->
+<div class="panel panel-success" ng-init="getWoman()">
+  <div class="col-lg-12">
+
+      <!--First row-->
+      <div class="row wow fadeIn" data-wow-delay="0.4s">
+
+              <!--Product-->
+              <div class="col-md-4">
+                <div class="panel-image">
+                    <!--Featured image-->
+                    <div class="view overlay hm-white-light z-depth-1-half">
+                        <img src="{{woman.image_url}}" class="img-fluid " alt="">
+                    </div>
+                    <!--/.Featured image-->
+                </div>
+              </div>
+
+              <div class="col-md-8">
+                <br>
+
+                <!--Product data-->
+                <h2 class="h2-responsive mt-4"> {{woman.name}}</h2>
+                <h4>{{woman.job}}</h4>
+                <hr>
+                <p>{{woman.bio}}</p>
+
+            <!--Product-->
+              </div>
+
+      </div>
+      <!--/.First row-->
+
+      <!--Second row-->
+      <div class="row">
+
+          <!--Heading-->
+          <div class="col reviews wow fadeIn" data-wow-delay="0.4s">
+              <h2 class="h2-responsive">Reviews</h2>
+          </div>
+
+          <!--First review-->
+          <div class="media wow fadeIn" data-wow-delay="0.2s">
+              <a class="media-left" href="#">
+                  <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg" alt="Generic placeholder image">
+              </a>
+              <div class="media-body ml-4">
+                  <h4 class="media-heading">John Doe</h4>
+                  <ul class="rating inline-ul list-unstyled">
+                      <li><i class="fa fa-star amber-text"></i></li>
+                      <li><i class="fa fa-star amber-text"></i></li>
+                      <li><i class="fa fa-star amber-text"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure
+                      soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda.
+                      Earum sit id ullam eum vel delectus!</p>
+              </div>
+          </div>
+
 </div>
