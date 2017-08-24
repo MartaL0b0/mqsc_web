@@ -10,7 +10,8 @@ Field = require('./models/field');
 Woman = require('./models/woman');
 
 //connect to mongoose
-mongoose.connect('mongodb://localhost/test', { useMongoClient: true });
+// mongoose.connect('mongodb://localhost/test', { useMongoClient: true });
+mongoose.connect('mongodb://martal0b0:mqsctest1@ds157833.mlab.com:57833/mqsc', { useMongoClient: true });
 var db = mongoose.connection;
 
 app.get('/', function(req, res){
