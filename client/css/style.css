@@ -12,6 +12,13 @@ img {
   margin-bottom: 50px;
 }
 
-h5 {
-  color: green;
+#changeWoman {
+  color: #0f6256;
+  font-family: fantasy;
+
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
 }
