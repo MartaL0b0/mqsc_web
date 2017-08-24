@@ -71,18 +71,21 @@ myApp.controller('WomenController', ['$scope', '$http', '$location', '$routePara
   }
 
   $scope.removeWoman = function (id) {
-      //console.log('entra en la función removeWoman');
-    $http({
-          method: 'DELETE',
-          url: 'api/women/' + id
-       }).then(function (response){
-        // $scope.woman = response.data;
-        window.location.href='#!/women';
+    if (confirm("Are you sure?") == true) {
+      $http({
+            method: 'DELETE',
+            url: 'api/women/' + id
+         }).then(function (response){
+          // $scope.woman = response.data;
+          window.location.href='#!/women';
 
-         console.log(response.data);
-       },function (error){
-         console.log(error);
-       });
+           console.log(response.data);
+         },function (error){
+           console.log(error);
+         });
+  } else {
+  }
+
   }
 
 
