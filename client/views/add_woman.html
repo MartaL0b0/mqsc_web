@@ -56,66 +56,64 @@
 
 
 <!-- Form contact -->
-<form ng-init="getFields()" ng-submit="addWoman()">
+<form name="womanForm" ng-init="getFields()" ng-submit="addWoman()">
 
-  <p class="h5 text-center mb-4">Add a new woman</p>
+  <p class="h1 text-center mb-4" id="changeWoman">Add a new woman</p>
 
   <div class="md-form">
     <i class="fa fa-user prefix grey-text"></i>
-    <input type="text" id="form3" class="form-control" ng-model="woman.name">
-    <label for="form3">Her name</label>
+    <input type="text" id="form3" class="form-control validate" ng-model="woman.name" required>
+    <label for="form3" data-error="field required">Her name</label>
   </div>
 
   <div class="md-form">
     <i class="fa fa-university prefix grey-text"></i>
     <input type="text" id="form2" class="imput-alternate" disabled>
-    <select class="form-control no-border" ng-model="woman.field" style="padding-left: 3em">
+    <select class="form-control validate no-border" ng-model="woman.field" style="padding-left: 3em" required>
           <div >
             <option ng-repeat="field in fields" value="{{field.name}}">{{field.name}}</option>
           </div>
 
         </select>
     <label for="form2">Her field of study</label>
-
-
-
-
   </div>
 
   <div class="md-form">
     <i class="fa fa-mortar-board prefix grey-text"></i>
-    <textarea type="text" id="form8" class="md-textarea" style="height: 50px" ng-model="woman.job"></textarea>
+    <textarea type="text" id="form8" class="md-textarea validate" style="height: 50px" ng-model="woman.job" required></textarea>
     <label for="form34">Her career description</label>
   </div>
 
   <div class="md-form">
     <i class="fa fa-birthday-cake prefix grey-text"></i>
-    <input type="text" id="form3" class="form-control" ng-model="woman.birthDate">
+    <input type="text" id="form3" class="form-control validate" ng-model="woman.birthDate" required>
     <label for="form3">Her date of birth</label>
   </div>
 
   <div class="md-form">
     <i class="fa fa-frown-o prefix grey-text"></i>
-    <input type="text" id="form3" class="form-control"  ng-model="woman.deceaseDate">
+    <input type="text" id="form3" class="form-control validate"  ng-model="woman.deceaseDate">
     <label for="form3">Her date of decease</label>
   </div>
 
 
   <div class="md-form">
     <i class="fa fa-pencil prefix grey-text"></i>
-    <textarea type="text" id="form8" class="md-textarea" style="height: 120px"  ng-model="woman.bio"></textarea>
+    <textarea type="text" id="form8" class="md-textarea validate" style="height: 120px"  ng-model="woman.bio" required></textarea>
     <label for="form8">Her brief biography</label>
   </div>
 
   <div class="md-form">
     <i class="fa fa-camera-retro prefix grey-text"></i>
-    <input type="text" id="form3" class="form-control" ng-model="woman.image_url">
+    <input type="text" id="form3" class="form-control validate" ng-model="woman.image_url" required>
     <label for="form3">A great picture of her</label>
   </div>
 
   <div class="text-center">
     <button type="submit" class="btn btn-default" >Upload <i class="fa fa-upload ml-1"></i></button>
   </div>
+
+<!-- ng-disabled="womanForm.$invalid" -->
 
 </form>
 <!-- Form contact -->
