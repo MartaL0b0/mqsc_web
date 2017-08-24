@@ -1,7 +1,7 @@
 <a class="btn btn-default" href="#!/women" aria-label="Back">
 <i class="fa fa-backward" aria-hidden="true"></i>
 </a>
-
+<!--
 <div class="panel panel-default" ng-init="getFields()">
   <div class="panel-heading">
     <h3 class="panel-title">Edit woman</h3>
@@ -51,4 +51,69 @@
     </div>
   </div>
 </div>
-</div>
+</div> -->
+
+<div class="h1 text-center mb-4" id="changeWoman" ng-init="getFields()">Edit this woman</div>
+
+
+<form name="womanForm" ng-init="getWoman()" ng-submit="updateWoman()">
+
+  <!-- <p class="h1 text-center mb-4" id="changeWoman">Edit this woman</p> -->
+
+  <div class="md-form">
+    <i class="fa fa-user prefix grey-text"></i>
+    <input type="text" id="form3" class="form-control validate" ng-model="woman.name" required>
+    <!-- <label for="form3" data-error="field required">Her name</label> -->
+  </div>
+
+  <div class="md-form">
+    <i class="fa fa-university prefix grey-text"></i>
+    <input type="text" id="form2" class="imput-alternate" disabled>
+    <select class="form-control validate no-border" ng-model="woman.field" style="padding-left: 3em" required>
+          <div >
+            <option ng-repeat="field in fields" value="{{field.name}}">{{field.name}}</option>
+          </div>
+
+        </select>
+    <!-- <label for="form2">Her field of study</label> -->
+  </div>
+
+  <div class="md-form">
+    <i class="fa fa-mortar-board prefix grey-text"></i>
+    <textarea type="text" id="form8" class="md-textarea validate" style="height: 50px" ng-model="woman.job" required></textarea>
+    <!-- <label for="form34">Her career description</label> -->
+  </div>
+
+  <div class="md-form">
+    <i class="fa fa-birthday-cake prefix grey-text"></i>
+    <input type="text" id="form3" class="form-control validate" ng-model="woman.birthDate" required>
+    <!-- <label for="form3">Her date of birth</label> -->
+  </div>
+
+  <div class="md-form">
+    <i class="fa fa-frown-o prefix grey-text"></i>
+    <input type="text" id="form3" class="form-control validate"  ng-model="woman.deceaseDate">
+    <!-- <label for="form3">Her date of decease</label> -->
+  </div>
+
+
+  <div class="md-form">
+    <i class="fa fa-pencil prefix grey-text"></i>
+    <textarea type="text" id="form8" class="md-textarea validate" style="height: 120px"  ng-model="woman.bio" required></textarea>
+    <!-- <label for="form8">Her brief biography</label> -->
+  </div>
+
+  <div class="md-form">
+    <i class="fa fa-camera-retro prefix grey-text"></i>
+    <input type="text" id="form3" class="form-control validate" ng-model="woman.image_url" required>
+    <!-- <label for="form3">A great picture of her</label> -->
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="btn btn-default">Update<i class="fa fa-upload ml-1"></i></button>
+  </div>
+
+<!-- ng-disabled="womanForm.$invalid" -->
+
+</form>
+<!-- Form contact -->
