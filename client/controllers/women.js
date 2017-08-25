@@ -56,14 +56,15 @@ myApp.controller('WomenController', ['$scope', '$http', '$location', '$routePara
   $scope.updateWoman = function () {
       //console.log('entra en la función updateWoman');
       var id = $routeParams.id;
+      
     $http({
           method: 'PUT',
           url: 'api/women/' + id,
           data: $scope.woman
        }).then(function (response){
         // $scope.woman = response.data;
-        window.location.href='#!/women';
-
+        window.location.href='#!/women/details/' + id;
+        console.log('#!/women/details/' + id);
          console.log(response.data);
        },function (error){
          console.log(error);
