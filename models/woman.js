@@ -27,6 +27,10 @@ var womanSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  quote:{
+    type: String,
+    required: true
+  },
   image_url:{
     type: String
   }
@@ -59,6 +63,7 @@ module.exports.updateWoman = function(id, woman, options, callback){
     field: woman.field,
     job: woman.job,
     bio: woman.bio,
+    quote: woman.quote,
     image_url: woman.image_url
     }
   Woman.findOneAndUpdate(query, update, options, callback);
