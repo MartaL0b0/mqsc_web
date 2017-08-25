@@ -114,8 +114,8 @@ app.delete('/api/women/:_id', function(req, res){
   });
 });
 
-
-app.listen(3000);
+var port = process.env.PORT || 8080;
+app.listen(port);
 console.log('Running on port 3000...');
 
 //VUELVE A CONECTAR LA APP QUE LA HAS PARADO
