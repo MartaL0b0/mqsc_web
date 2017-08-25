@@ -56,7 +56,7 @@ myApp.controller('WomenController', ['$scope', '$http', '$location', '$routePara
   $scope.updateWoman = function () {
       //console.log('entra en la función updateWoman');
       var id = $routeParams.id;
-      
+
     $http({
           method: 'PUT',
           url: 'api/women/' + id,
@@ -107,6 +107,10 @@ myApp.controller('WomenController', ['$scope', '$http', '$location', '$routePara
        });
 
   }
+
+$scope.goBack = function () {
+  window.history.back();
+}
 
 
 //funcion para tests
