@@ -112,6 +112,10 @@ $scope.goBack = function () {
   window.history.back();
 }
 
+// $scope.goUp = function () {
+//   console.log("goUp llamado");
+//   window.scrollTop(0);
+// } esta función no hace falta porque con un atributo en la etiqueta de ngView se soluciona :)
 
 //funcion para tests
   $scope.myTxt = "You have not yet clicked submit";
