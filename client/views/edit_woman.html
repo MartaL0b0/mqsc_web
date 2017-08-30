@@ -1,64 +1,11 @@
 <a class="btn btn-default" ng-click="goBack()" aria-label="Back">
 <i class="fa fa-backward" aria-hidden="true"></i>
 </a>
-<!--
-<div class="panel panel-default" ng-init="getFields()">
-  <div class="panel-heading">
-    <h3 class="panel-title">Edit woman</h3>
-  </div>
-  <div class="panel-body">
-    <div class="row">
-      <div class="col-md-12">
-
-      <form ng-submit="updateWoman()" ng-init= "getWoman()">
-        <div class="form-group">
-          <label>Name</label>
-          <input type="text" class="form-control" ng-model="woman.name" placeholder="name">
-        </div>
-
-        <div class="form-group">
-          <label>Field</label>
-          <select class="form-control" ng-model="woman.field">
-            <div >
-              <option ng-repeat="field in fields" value="{{field.name}}">{{field.name}}</option>
-            </div>
-
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Job</label>
-          <input type="text" class="form-control" ng-model="woman.job" placeholder="job">
-        </div>
-        <div class="form-group">
-          <label>Birth Date</label>
-          <input type="text" class="form-control" ng-model="woman.birthDate" placeholder="birth Date">
-        </div>
-        <div class="form-group">
-          <label>Decease Date</label>
-          <input type="text" class="form-control" ng-model="woman.deceaseDate" placeholder="decease Date">
-        </div>
-        <div class="form-group">
-          <label>Bio</label>
-          <textarea class="form-control" ng-model="woman.bio" placeholder="bio"></textarea>
-        </div>
-        <div class="form-group">
-          <label>Image</label>
-          <input type="text" class="form-control" ng-model="woman.image_url" placeholder="image url">
-        </div>
-        <input type="submit">
-      </form>
-
-    </div>
-  </div>
-</div>
-</div> -->
 
 <div class="h1 text-center mb-4" id="changeWoman" ng-init="getFields()">Edit this woman</div>
 
 
 <form name="womanForm" ng-init="getWoman()" ng-submit="updateWoman()">
-
-  <!-- <p class="h1 text-center mb-4" id="changeWoman">Edit this woman</p> -->
 
   <div class="md-form">
     <i class="fa fa-user prefix grey-text"></i>

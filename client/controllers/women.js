@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp');
 
 myApp.controller('WomenController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams){ //lo pone así para evitar break al usar 'minified angular'
-  console.log('WomenController loaded...');
+  console.log('WomenController loaded...'); //control
 
   $scope.getWomen = function () {
     //console.log('getWomen called');
